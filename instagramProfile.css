@@ -1,0 +1,279 @@
+body{
+    margin:0px;
+    background-color: rgb(241, 241, 241);
+    font-family: sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+/* Header y contenido del header */
+
+.header{
+    height: 54px;
+    background-color: white;
+    position: sticky;
+    top:0;
+    margin-bottom: 20px;
+}
+
+.instaLogo{
+    height: 45px;
+}
+
+.inputs{
+    height: 28px;
+    width: 215px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 3px;
+}
+
+input{
+    border: none ;
+    background-color: inherit;
+    font-size: 14px;
+    text-align: center;
+    margin: 2px;
+}
+
+.logos{
+    width: 222px;
+}
+
+i{
+    color: black;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.profileTiny{
+    height: 28px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+
+/* Todo lo demás */
+
+.all{
+    width: 935px;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.profilePicContainer{
+    margin-right: 30px;
+}
+
+.profilePicContainer div{
+    height: 150px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+#profilePic{
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #bebebe;
+}
+
+#profilePic:hover{
+    scale: 1.2;
+}
+
+.topBlock{
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
+}
+.topBlock >*{
+    margin-top: 20px;
+}
+
+.row1{
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
+}
+
+.username{
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.edit{
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    height: 30px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.row2 >*{
+    margin-right: 40px;
+}
+
+.description{
+    align-items: flex-start;
+    text-align: left;
+    justify-content: left;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.description h1{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #00376b;
+    font-weight: 600;
+}
+
+
+hr{
+    width: 100%;
+    max-width: 935px;
+    color: #8e8e8e;
+    margin-top: 30px;
+}
+
+.menu{
+    justify-content: center;
+    height: 53px;
+}
+.menu >*{
+    margin-left: 60px;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.menu i{
+    color: #8e8e8e;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Grid de fotos */
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content:center;
+}
+
+.grid{
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.grid img{
+    height: 293px;
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 20px;
+    margin-bottom: 52px;
+}
+
+.footerLinks{
+    color: #8e8e8e;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+}
+
+.footerLinks > *{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:990px){
+
+    hr{
+        max-width: 700px;
+    }
+    .grid img{
+        height: 200px; 
+    }
+    
+}
+
+
+@media screen and (max-width:670px){
+
+    .profileInfo{
+        display: flex;
+        flex-direction: column; 
+    }
+    hr{
+        max-width: 350px;
+    }
+
+    .menu span{
+        display: none;
+    }
+
+    .menu i{
+        font-size: 20px;
+    }
+
+    .grid img{
+        height: 150px; 
+    }
+    
+}
+
+@media screen and (max-width:570px){
+
+    .inputs{
+        display: none;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column; 
+    }
+    .grid img{
+        height: 200px; 
+    }
+    
+}

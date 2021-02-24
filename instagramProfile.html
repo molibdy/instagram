@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta profile</title>
+    <link rel="stylesheet" href="instagramProfile.css">
+    <script src="https://kit.fontawesome.com/175a06e64b.js" crossorigin="anonymous"></script>
+    <script src="instagramProfile.js"></script>
+</head>
+
+<body>
+    <header class="header row">
+        <img class="instaLogo" src="instaLogo.png" alt="">
+        <div class="inputs">
+            <input type="text" id="search" placeholder="Search">
+        </div>
+        <div class="logos row">
+            <i class="fas fa-home"></i>
+            <i class="far fa-paper-plane"></i>
+            <i class="far fa-compass"></i>
+            <i class="far fa-heart"></i>
+            <img class="profileTiny" src="profilePic.png" alt="">
+        </div>
+    </header>    
+
+    <div class="column">
+        <div class="column all">
+            <div class="profileInfo">
+                <div class="profilePicContainer">
+                    <div>
+                        <img id="profilePic" src="profilePic.png" alt="">
+                    </div>
+                </div>
+            
+                <div class="topBlock column">
+                    <div class="row row1">
+                        <div class="username">molisplace</div>
+                        <button class="edit" type="button">Edit profile</button>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="row row2">
+                        <span>2 posts</span>
+                        <span>22 followers</span>
+                        <span>19 following</span>
+                    </div>
+                    <div class="description column">
+                        <h1>Moli's Place</h1>
+                        <span>Handmade jewelry🖖</span>
+                        <span>🦆Mostly birds because I’m all about birds🦉</span>
+                        <span>but always up for a challenge!</span>
+                        <span>🐢Want a necklace of your turtle? Just ask for it!</span>
+                        <a href="https://www.etsy.com/shop/MolisPlace">www.etsy.com/shop/MolisPlace</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <hr>
+                <div class="row menu">
+                    <div>
+                        <i class="fas fa-border-all"></i><span>POSTS</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-tv"></i><span>IGTV</span>
+                    </div>
+                    <div>
+                        <i class="far fa-bookmark"></i><span>SAVED</span>
+                    </div>
+                    <div>
+                        <i class="far fa-id-badge"></i><span>TAGGED</span>
+                    </div>
+                </div>
+                <div class="fotos">
+                    <div class="grid">
+                        <img id="1" onmouseover="darken(1)" onmouseout="back(1)" src="pic1.png" alt="">
+                        <img id="2" onmouseover="darken(2)" onmouseout="back(2)" src="pic2.png" alt="">
+                        <img id="3" onmouseover="darken(3)" onmouseout="back(3)" src="pic3.png" alt="">
+                    </div>
+                    <div class="grid">
+                        <img id="4" onmouseover="darken(4)" onmouseout="back(4)" src="pic4.png" alt="">
+                        <img id="5" onmouseover="darken(5)" onmouseout="back(5)" src="pic5.png" alt="">
+                        <img id="6" onmouseover="darken(6)" onmouseout="back(6)" src="pic6.png" alt="">
+                    </div>
+                </div>
+                <div class="footer column">
+                    <p class="footerLinks">
+                        <span>About</span>
+                        <span>Blog</span>
+                        <span>Jobs</span>
+                        <span>Help</span>
+                        <span>API</span>
+                        <span>Privacy</span>
+                        <span>Terms</span>
+                        <span>Top Accounts</span>
+                        <span>Hashtags</span>
+                        <span>Locations</span>
+                    </p>
+                    <div class="footerLinks"><span>English</span><span>© 2021 Instagram from Facebook</span></div>
+                </div>
+    </div>
+</body>
+</html>
+
+
+

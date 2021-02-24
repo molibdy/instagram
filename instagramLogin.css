@@ -1,0 +1,255 @@
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: sans-serif;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+.column > *{
+    margin: 6px;
+}
+
+.total{
+    width: 935px;
+}
+
+#fotos{
+    height: 618px;
+    width: 454px;
+    position: relative;
+}
+
+.moviles{
+    height: 100%;
+    z-index: -1;
+}
+
+.innerFoto{
+    height: 427px;
+    left: 151px;
+    top: 100px;
+    position: absolute;
+    width: 240px;
+    z-index: 1;
+}
+
+#dcha{
+    height: 600px;
+    width: 350px;
+
+}
+
+.whiteSquare{
+    background-color: white;
+    border: 1px solid rgb(185, 184, 184);
+    width: 350px;
+}
+
+#formularioContenedor{
+    height: 380px;
+}
+
+#instaLogo{
+    height: 75px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+}
+.formulario > *{
+    margin-top: 5px;
+}
+
+.inputs{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 3px;
+    width: 100%;
+}
+
+input{
+    border: none ;
+    background-color: inherit;
+    font-size: 12px;
+    text-align: left;
+    width: 95%;
+}
+
+#logInButton{
+    height:30px;
+    background-color:rgb(41, 150, 252);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+}
+
+#logInButton:disabled{
+    background-color:rgb(179, 215, 248);
+    color: white;
+    
+    cursor:default;
+}
+
+.horLine{
+    width:40%;
+    height: 1px;
+    background-color: rgb(185, 184, 184);
+}
+
+.or{
+    width: 258px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#or{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(185, 184, 184);
+}
+
+.facebook{
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.fbLogin{
+    color: #385185;
+    font-weight:bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#fbLogo{
+    height: 16px;
+}
+
+.forgot{
+    font-size: 12px;
+    color: #00376b;
+    cursor: pointer;
+}
+
+.signUp{
+    height: 63px;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    vertical-align: middle;
+}
+
+.signUp > *{
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.sign{
+    cursor: pointer;
+    color: rgb(41, 150, 252);
+}
+
+.appStoresContainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+.appStores{
+    height: 40px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 40px;
+}
+
+.footerLinks{
+    color: #8e8e8e;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+
+}
+
+.footerLinks > *{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:876px){
+    #fotos{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:481px){
+    .whiteSquare{
+        background-color: inherit;
+        border: none;
+        width: 100%;
+    }
+
+    #dcha{
+        height: 600px;
+        width:auto;
+        padding-left: 46px;
+        padding-right: 46px;
+    
+    }
+
+}
+
+@media screen and (max-width:290px){
+    .appStoresContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario{
+        width:80%;
+    }
+
+    .or{
+        width:80%;
+    }
+
+}
